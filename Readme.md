@@ -253,6 +253,11 @@ git branch --delete <branch_name>
 git push origin --delete <branch_name>
 ```
 
+### Git remote branch 연결 확인
+```
+git branch -vv
+```
+
 ### Git Merge
 - 현재 위치한 버전에 다른 버전을 병합하는 작업
 - Branch를 병합하거나
