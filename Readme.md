@@ -140,7 +140,7 @@ git log -S <검색어>
 
 - Remote 저장소 추가   
 ```
-git remnote add <name> <remote_repository_url>
+git remote add <name> <remote_repository_url>
 ```
 
 - Remote 저장소 기본 이름   
@@ -208,6 +208,11 @@ mkdir -> Git init -> Git Remote add -> Git Pull
 - 특정 버전으로 이동   
 ```
 git checkout <commit_id>
+```
+
+- remote에 있는거 local로 가져오기
+```
+git checkout -t <remote branch>
 ```
 
 ### Git Branch 목록
