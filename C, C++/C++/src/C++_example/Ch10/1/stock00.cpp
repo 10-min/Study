@@ -5,7 +5,7 @@ void Stock::acquire(const std::string & co, long n, double pr) {
     company = co;
     if (n < 0) {
         std::cout << "주식 수는 음수가 될 수 없으므로, "
-                << company << " shares를 0으로 설명합니다./n";
+                << company << " shares를 0으로 설명합니다.\n";
         shares = 0;
     } else
         shares = n;
@@ -16,7 +16,7 @@ void Stock::acquire(const std::string & co, long n, double pr) {
 void Stock::buy(long num, double price) {
     if (num < 0) {
         std::cout << "매입 주식 수는 음수가 될 수 없으므로, "
-                << "거래가 취소되었습니다./n";
+                << "거래가 취소되었습니다.\n";
         
     } else {
         shares += num;
@@ -29,10 +29,10 @@ void Stock::sell(long num, double price) {
     using std::cout;
     if (num < 0) {
         cout << "매도 주식 수는 음수가 될 수 없으므로, "
-            << "거래가 취소되었습니다./n";
+            << "거래가 취소되었습니다.\n";
     } else if (num > shares) {
         cout << "보유 주식보다 많은 주식을 매도할 수 없으므로, "
-            << "거래가 취소되었습니다./n";
+            << "거래가 취소되었습니다.\n";
     } else {
         shares -= num;
         share_val = price;
