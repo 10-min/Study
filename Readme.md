@@ -293,3 +293,9 @@ git tag
 ```
 git tag <tagname> <commit_id>
 ```
+
+### Git 절차
+```
+git remote update
+git pull
+```
