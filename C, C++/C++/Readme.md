@@ -57,4 +57,9 @@ vector.erase(iterator);
 ## argc 와 argv의 차이
 
 - argc: "Argument Count"의 약자로, 명령줄 인수의 개수를 나타내는 정수(int)입니다.
-- argv: "Argument Vector"의 약자로, 명령줄 인수를 저장하는 문자열 배열(포인터 배열, char *[])입니다. 
+- argv: "Argument Vector"의 약자로, 명령줄 인수를 저장하는 문자열 배열(포인터 배열, char *[])입니다.
+
+## shared_ptr
+> C++ 표준 라이브러리에서 제공하는 스마트 포인터(smart pointer) 중 하나로, 동적 할당된 메모리를 여러 객체가 안전하게 공유할 수 있게 해줍니다. 이는 메모리 관리의 복잡성을 줄이고, 메모리 누수나 dangling pointer(할당 해제된 메모리를 가리키는 포인터) 문제를 방지하는 데 유용합니다. ROS 2에서도 shared_ptr은 자주 사용되는데, 특히 노드나 객체를 효율적으로 관리할 때 많이 보입니다.
+- 참조하면 참조 카운팅을함
+- 해제는 자동
