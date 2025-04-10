@@ -51,3 +51,10 @@ str = toUpperCase(str); // 대문자로
 ``` cpp
 vector.erase(iterator);
 ```
+
+### 개념
+
+## argc 와 argv의 차이
+
+- argc: "Argument Count"의 약자로, 명령줄 인수의 개수를 나타내는 정수(int)입니다.
+- argv: "Argument Vector"의 약자로, 명령줄 인수를 저장하는 문자열 배열(포인터 배열, char *[])입니다. 
